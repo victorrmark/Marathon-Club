@@ -140,18 +140,21 @@ li{
     padding: 0;
     margin: 0;
     position: relative;
+    max-width: 100%;
 }
 
 .background{
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     height: inherit;
-    position: absolute;
-    width: 100%;
+    position: relative;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .background-content h1{
@@ -187,7 +190,7 @@ li{
 
     .background-content h1{
         font-size: 3.125rem;
-        font-weight: 900;
+        font-weight: 700;
     }
     
     .background-content p{
@@ -198,14 +201,18 @@ li{
 @media only screen and (max-width: 480px){
     #background{
         height: 21.875rem;
+        font-weight: 500;
     }
     
     .background{
         justify-content: flex-start;
         align-items: center;
         text-align: left;
-        padding-left: 5%;
-        padding-right: 5%; 
+        max-width: 100%;
+    }
+
+    .background-content h1{
+        font-size: 2.5rem;
     }
 }
 
